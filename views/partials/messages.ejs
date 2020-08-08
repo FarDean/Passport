@@ -7,3 +7,20 @@
             </button>
         </div>
 <% })} %> 
+
+<% if(success_msg != ''){ %> 
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> <p><%= success_msg %> </p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<% } %> 
+<% if(error_msg != ''){ %> 
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> <p><%= error_msg %> </p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<% } %> 
